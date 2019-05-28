@@ -10,3 +10,7 @@ run `yarn install --ignore-engines` in project root
 ## Run
 
 run `yarn start`
+
+## Tests
+
+run `yarn test` to run tests.
