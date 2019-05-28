@@ -23,16 +23,9 @@ export default function initStore(initialState) {
   );
 
   // eslint-disable-next-line no-console
-  const stateLogger = () => console.info(store.getState());
-  //store.subscribe(stateLogger);
-  //stateLogger();
-
-  // Hot reload reducers (requires Webpack or Browserify HMR to be enabled)
-  // if (module.hot) {
-  //   module.hot.accept('../reducers', () =>
-  //     store.replaceReducer(require('../reducers')),
-  //   ); // eslint-disable-line global-require
-  // }
+  // const stateLogger = () => console.info(store.getState());
+  // store.subscribe(stateLogger);
+  // stateLogger();
 
   return { store, history };
 }

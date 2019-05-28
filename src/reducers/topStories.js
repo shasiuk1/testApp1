@@ -2,7 +2,7 @@
 
 import { RECEIVE_GET_TOPSTORIES } from 'SRC/actions/index';
 
-const initialState = {};
+const initialState = [];
 
 const story = (state = initialState, action) => {
   switch (action.type) {

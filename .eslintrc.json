@@ -8,9 +8,7 @@
     "browser": true
   },
   "plugins": ["babel", "react", "import", "prettier"],
-  "rules": {
-
-  },
+  "rules": {},
   "settings": {
     "import/resolver": "webpack"
   }

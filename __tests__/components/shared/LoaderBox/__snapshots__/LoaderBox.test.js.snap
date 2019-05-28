@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test LoaderBox component matches snapshot 1`] = `
+<div
+  className="loader"
+  style={Object {}}
+>
+  <div
+    className="loader-icon"
+  >
+    <Spinner />
+  </div>
+  <div>
+    Please wait, loading..
+  </div>
+</div>
+`;
