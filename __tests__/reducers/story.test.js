@@ -3,7 +3,7 @@
 import reducer from 'SRC/reducers/story';
 import * as actions from 'SRC/actions/index';
 
-describe('comment reducer', () => {
+describe('story reducer', () => {
   const initialState = {};
   const firstStory = {
     id: 1,
