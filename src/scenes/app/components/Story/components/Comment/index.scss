@@ -6,9 +6,16 @@
   padding: .5em 0 1em;
   border-bottom: 2px solid $color-gray-lighter;
 
+  // styles for possible html within comment body
   :global {
     p {
       margin: .8em 0;
+    }
+
+    p,
+    a,
+    pre {
+      white-space: normal;
     }
   }
 }
