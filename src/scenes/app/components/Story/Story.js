@@ -24,8 +24,9 @@ class Story extends PureComponent {
   handleOpenComments() {
     const { isOpen, isLoadingComments } = this.state;
 
-    // prevent fetching if it's already in process
-    if (!isLoadingComments) {
+    // Prevent fetching if it's already in process
+    // or if comment section is going to be closed
+    if (!isLoadingComments && !isOpen) {
       this.handleFetchComments();
     }
 
