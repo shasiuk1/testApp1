@@ -1,0 +1,6 @@
+@import '~SRC/styles/variables';
+@import '~SRC/styles/mixins';
+
+.comments {
+  @include empty-rule;
+}

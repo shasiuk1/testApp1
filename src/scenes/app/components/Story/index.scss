@@ -1,0 +1,59 @@
+@import '~SRC/styles/variables';
+@import '~SRC/styles/mixins';
+
+$body-padd: .8em;
+
+.story {
+  border: 1px solid $color-gray-light;
+  border-radius: 2px;
+  margin-bottom: .8em;
+  background: #fff;
+}
+
+.story-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story-head-start {
+  padding: $body-padd;
+}
+
+.story-head-end {
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  padding: $body-padd;
+  margin-left: 1em;
+}
+
+.story-title {
+  font-size: $text-size-lg;
+  line-height: 1.1;
+  margin-bottom: 5px;
+
+  .story-title-text {
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .story-title-by {
+    @include empty-rule;
+  }
+}
+
+.story-score {
+  font-weight: 700;
+  color: $color-warning;
+}
+
+.story-body {
+  padding: $body-padd * 1.5;
+  border-top: 1px solid $color-gray-light;
+}
+
+.toggle-comments {
+  cursor: pointer;
+  color: $color-primary;
+  text-decoration: underline;
+}

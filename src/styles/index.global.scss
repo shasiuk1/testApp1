@@ -1,0 +1,48 @@
+@import '~normalize-scss';
+
+// Custom variables
+@import 'variables';
+@import 'mixins';
+
+@include normalize();
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+  font-family: sans-serif;
+
+  @media (max-width: $screen-small) {
+    font-size: $base-font-size-small;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font;
+  font-weight: 400;
+  background: darken(#fff, 1.2%);
+}
+
+small {
+  font-size: $text-size-sm;
+}
+
+p,
+pre {
+  margin: 1em 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 940px + $gutter-width * 2;
+  padding: 0 $gutter-width;
+  margin: 0 auto;
+}

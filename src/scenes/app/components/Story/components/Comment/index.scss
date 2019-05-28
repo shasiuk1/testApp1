@@ -1,0 +1,23 @@
+@import '~SRC/styles/variables';
+@import '~SRC/styles/mixins';
+
+.comment {
+  margin: 0 0 2em;
+  padding: .5em 0 1em;
+  border-bottom: 2px solid $color-gray-lighter;
+
+  :global {
+    p {
+      margin: .8em 0;
+    }
+  }
+}
+
+.comment-body {
+  padding: 0 0 0 .8em;
+}
+
+.comment-author {
+  margin: 0 0 .4em;
+  font-weight: 700;
+}

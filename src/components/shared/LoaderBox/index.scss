@@ -1,0 +1,15 @@
+@import '~SRC/styles/variables';
+@import '~SRC/styles/mixins';
+
+.loader {
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+  margin: 0 auto;
+  font-size: $text-size;
+  background-color: $color-gray-lighter;
+}
+
+.loader-icon {
+  margin-right: 1rem;
+}

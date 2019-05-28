@@ -1,0 +1,20 @@
+@import '~SRC/styles/variables';
+@import '~SRC/styles/mixins';
+
+.spinner {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 2px;
+  vertical-align: text-bottom;
+  border: .2em solid $text-color;
+  border-right-color: transparent;
+  border-radius: 50%;
+  color: $text-color;
+  animation: spinner-animate .75s linear infinite;
+}
+
+
+@keyframes spinner-animate {
+  to { transform: rotate(360deg); }
+}
