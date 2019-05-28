@@ -1,12 +1,13 @@
 @import '~normalize-scss';
 
-// Custom variables
 @import 'variables';
 @import 'mixins';
 
 @include normalize();
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
