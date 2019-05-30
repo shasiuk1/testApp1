@@ -9,7 +9,7 @@ import Story from './Story';
 
 // cut array of ids to match max comments amount
 const getCutCommentsIds = (ids) =>
-  ids.length < COMMENTS_MAX ? [...ids] : ids.slice(0, COMMENTS_MAX);
+  (ids || []).length < COMMENTS_MAX ? [...ids] : ids.slice(0, COMMENTS_MAX);
 
 const mapStateToProps = (state, props) => {
   const storyId = props.story.id;
